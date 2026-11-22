@@ -10,17 +10,23 @@ Pillow at build time and shipped as `entry.png`.
 
 ## The day on the page
 
-- **Sport · Formula One —** F1 lights up Las Vegas: the Strip becomes a floodlit circuit for the night race.
-- **Gaming · global —** GTA VI's launch weekend grips the globe as Rockstar's delayed blockbuster reaches players.
-- **Tennis · Turin —** the ATP Finals crown their champion indoors in northern Italy.
-- **Climate · Antalya —** COP31 closes after overtime, with delegates running past the deadline on a finance text.
-- **Science · Mercury —** the ESA-JAXA BepiColombo probe enters orbit and begins surveying the sun's nearest planet.
-- **Markets · New York —** AI chip stocks set the tone before a holiday-shortened US week.
-- **Diplomacy · Brussels —** the UK and EU press their post-Brexit reset on defence and mobility.
-- **Also today —** the NFL's Week 12 Sunday slate, India and New Zealand's Test series, and the Thanksgiving travel rush.
+- **Sport · Formula One —** F1 lights up Las Vegas: Max Verstappen starts from pole as the Strip becomes a
+  floodlit 50-lap circuit for the night race.
+- **Climate · Antalya —** COP31's latest draft omits fossil fuels; Panama threatens to object as the text
+  goes to the plenary.
+- **Cricket · Wellington —** India declare on 720 for nine, the highest Test total away from home, leaving
+  New Zealand 352 behind.
+- **Basketball · San Antonio —** Wembanyama scores 50 with 19 rebounds as the Spurs beat the Pelicans 114-91.
+- **Science · Mercury —** the ESA-JAXA BepiColombo probe settles into orbit and begins surveying the sun's
+  nearest planet.
+- **Gaming · global —** GTA VI's launch weekend grips players as Rockstar's blockbuster reaches consoles.
+- **Diplomacy · Brussels —** the UK and EU seal their post-Brexit reset: youth mobility, food checks and
+  linked carbon markets.
+- **Also today —** the ATP Finals final in Turin, NFL Week 12 with 49ers-Vikings in Mexico City, and AI chip
+  stocks setting the week's tone.
 
-Headlines are kept factual and non-graphic; the page carries no claimed results that are not yet known,
-so nothing on it can read as invented detail.
+Headlines are kept factual and non-graphic; the page claims no result that was not yet known at press time
+(the Las Vegas race starts from the grid, not a finish), so nothing on it reads as invented detail.
 
 ## How the entry works
 
@@ -36,13 +42,13 @@ mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
 The image is a static build-time artefact, so both grader runs copy identical bytes
-(`sha256 22cccd1edb04f0bd9e6b046b84845b2252f8481e0d8d7b95e00565cbdbd08664`).
+(`sha256 010c5633c9044003b89905595c865570e7e70860f35d9e14171aaf90b1944b5d`).
 
 ## Layout
 
 | File | What it is |
 | --- | --- |
-| `entry.png` | the front page, 1024x1024 PNG, 169,120 bytes |
+| `entry.png` | the front page, 1024x1024 PNG, 170,423 bytes |
 | `main.ts` | the entry program: validate and copy the image |
 | `package.json` | ESM marker so `node main.ts` runs without warnings |
 | `.makefun/owner.json` | claim file naming the entry's payout wallet |
